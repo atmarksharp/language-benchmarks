@@ -1,0 +1,11 @@
+{
+  "build_gcc": {
+    "tarai": "g++ -O3 tarai.cpp -o tarai.out"
+  },
+  
+  "gcc": {
+    "tarai": "./tarai.out"
+  },
+
+  "clean": "rm *.out"
+}

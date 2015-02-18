@@ -1,0 +1,16 @@
+{
+  "c": {
+    "dir":"c",
+    "build":"yes",
+    "pattern":{
+      "gcc":"gcc"
+    }
+  },
+  "c++": {
+    "dir":"cpp",
+    "build":"yes",
+    "pattern":{
+      "g++":"gcc"
+    }
+  }
+}
