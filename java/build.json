@@ -1,0 +1,11 @@
+{
+  "build_javac": {
+    "tarai": "javac Tarai.java"
+  },
+  
+  "javac": {
+    "tarai": "java Tarai"
+  },
+
+  "clean": "rm *.class"
+}

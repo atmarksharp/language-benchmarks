@@ -1,17 +1,35 @@
 {
   "c": {
     "gcc": {
-      "tarai": "0.0000030"
+      "tarai": "real 0m0.149s, user 0m0.120s, sys 0m0.003s"
     }
   },
   "c++": {
     "g++": {
-      "tarai": "0.0000035"
+      "tarai": "real 0m0.145s, user 0m0.118s, sys 0m0.004s"
     }
   },
   "ruby": {
     "ruby": {
-      "tarai": "1798.6180000"
+      "tarai": "real 0m2.083s, user 0m1.843s, sys 0m0.030s"
+    }
+  },
+  "ocaml": {
+    "ocamlc": {
+      "tarai": "real 0m0.734s, user 0m0.681s, sys 0m0.005s"
+    },
+    "ocamlopt": {
+      "tarai": "real 0m0.134s, user 0m0.098s, sys 0m0.004s"
+    }
+  },
+  "js": {
+    "node": {
+      "tarai": "real 0m0.357s, user 0m0.259s, sys 0m0.036s"
+    }
+  },
+  "java": {
+    "javac": {
+      "tarai": "real 0m0.305s, user 0m0.246s, sys 0m0.052s"
     }
   }
 }

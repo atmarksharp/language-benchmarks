@@ -1,0 +1,17 @@
+{
+  "build_ocamlc": {
+    "tarai": "ocamlc unix.cma tarai.ml -o tarai-ocamlc.out"
+  },
+  "build_ocamlopt": {
+    "tarai": "ocamlopt unix.cmxa tarai.ml -S -o tarai-ocamlopt.out"
+  },
+  
+  "ocamlc": {
+    "tarai": "./tarai-ocamlc.out"
+  },
+  "ocamlopt": {
+    "tarai": "./tarai-ocamlopt.out"
+  },
+
+  "clean": "rm *.out *.cmi *.cmo *.cmx"
+}

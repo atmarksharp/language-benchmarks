@@ -6,10 +6,5 @@ def tarai(x, y, z)
   end
 end
 
-startTime = Time.now
-tarai(12,6,0)
-endTime = Time.now
-
-timeElapsed = (endTime - startTime) * 1000.0
-
-puts timeElapsed
+n = tarai(12,6,0)
+puts n

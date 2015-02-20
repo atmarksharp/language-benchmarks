@@ -1,0 +1,5 @@
+{ 
+  "node": {
+    "tarai": "node tarai.js"
+  }
+}

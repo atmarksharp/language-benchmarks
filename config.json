@@ -13,6 +13,24 @@
       "g++":"gcc"
     }
   },
+  "java": {
+    "build":"yes",
+    "pattern":{
+      "javac":"javac"
+    }
+  },
+  "ocaml": {
+    "build":"yes",
+    "pattern":{
+      "ocamlc":"ocamlc",
+      "ocamlopt":"ocamlopt"
+    }
+  },
+  "js": {
+    "pattern":{
+      "node":"node"
+    }
+  },
   "ruby": {
     "pattern":{
       "ruby":"ruby"

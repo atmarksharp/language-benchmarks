@@ -1,4 +1,5 @@
 require 'json'
+require 'open3'
 
 JSON_FILE = "./result.json"
 CONFIG = JSON.load( File.read("config.json") )
@@ -9,6 +10,14 @@ RED = "\033[0;31m"
 LIGHT_BLUE = "\033[1;34m"
 RESET = "\033[0m"
 
+@err = nil
+
+def shell(cmd)
+  out, err, s = Open3.capture3(cmd)
+  @err = err
+  return out
+end
+
 def printPhase(msg, color)
   puts "#{color}#{msg}#{RESET}"
 end
@@ -17,11 +26,11 @@ def printLog(msg, color)
   puts "#{color}>>#{RESET} #{msg}"
 end
 
-def writeData(lang, key, value)
+def writeData(lang, value)
   data = JSON.load( File.read(JSON_FILE) )
 
   data[lang] = {}
-  data[lang][key] = value
+  data[lang] = value
 
   s = JSON.pretty_generate(data)
   File.write(JSON_FILE, s)
@@ -59,27 +68,24 @@ def bench(lang, phase)
   if phase.include? "run"
     printPhase "=== RUN ===", RED
 
-    pattern.keys.each do |key|
-      result = {}
+    result = {}
 
-      run_list = commands[pattern[key]]
-      run_list.keys.each do |key|
-        printLog ("cd #{dir}; " + run_list[key]), RED
+    pattern.keys.each do |compiler|
+      result[compiler] = {}
 
-        arr = (1..2).map.with_index do |n,i|
-          printLog "#{i+1}/2", RED
-          s = `cd #{dir}; #{run_list[key]}`.gsub(/[\n\r\t ]/,'')
-          Float(s)
-        end
+      run_list = commands[pattern[compiler]]
+      run_list.keys.each do |task|
+        printLog ("cd #{dir}; time " + run_list[task]), RED
 
-        n = (arr.inject(:+)/arr.length)
-        result[key] = "%0.7f"%n
+        out = shell("cd #{dir}; time #{run_list[task]}")
+        time = @err.split("\n")[1..-1].join(", ").gsub("\t"," ")
+        result[compiler][task] = time
 
-        printLog "[#{key}]: #{result[key]}", RED
+        printLog "[#{task}]: #{result[compiler][task]} ms (result: #{out})", RED
       end
-
-      writeData(lang, key, result)
     end
+
+    writeData(lang, result)
 
     puts ""
   end
