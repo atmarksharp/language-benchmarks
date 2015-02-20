@@ -13,5 +13,5 @@
     "tarai": "./tarai-ocamlopt.out"
   },
 
-  "clean": "rm *.out *.cmi *.cmo *.cmx"
+  "clean": "rm *.out *.cmi *.cmo *.cmx *.o"
 }
