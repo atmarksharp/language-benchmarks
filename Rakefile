@@ -66,7 +66,8 @@ def bench(lang, phase)
       run_list.keys.each do |key|
         printLog ("cd #{dir}; " + run_list[key]), RED
 
-        arr = (1..5).map do
+        arr = (1..2).map.with_index do |n,i|
+          printLog "#{i+1}/2", RED
           s = `cd #{dir}; #{run_list[key]}`.gsub(/[\n\r\t ]/,'')
           Float(s)
         end

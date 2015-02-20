@@ -7,7 +7,7 @@ int tarai(int x, int y, int z){
 
 int main(){
   float startTime = (float)clock()/CLOCKS_PER_SEC;
-  tarai(15,10,0);
+  tarai(12,6,0);
   float endTime = (float)clock()/CLOCKS_PER_SEC;
 
   float timeElapsed = endTime - startTime;
