@@ -83,7 +83,7 @@ def bench(lang, phase)
 
         out = shell("cd #{dir}; time #{run_list[task]}")
         time = @err.split("\n")[1..-1].join(", ").gsub("\t"," ")
-        result[compiler][task] = time
+        result[compiler][task] = time[time.index('real')..-1]
 
         printLog "[#{task}]: #{result[compiler][task]} ms (result: #{out})", RED
       end

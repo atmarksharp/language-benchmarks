@@ -1,43 +1,43 @@
 {
   "c": {
     "gcc": {
-      "tarai": ", real 0m0.002s, user 0m0.000s, sys 0m0.001s"
+      "tarai": "real 0m0.136s, user 0m0.120s, sys 0m0.003s"
     }
   },
   "c++": {
     "g++": {
-      "tarai": ", real 0m0.007s, user 0m0.000s, sys 0m0.001s"
+      "tarai": "real 0m0.137s, user 0m0.117s, sys 0m0.004s"
     }
   },
   "java": {
     "javac": {
-      "tarai": ", real 0m0.304s, user 0m0.243s, sys 0m0.059s"
+      "tarai": "real 0m0.329s, user 0m0.245s, sys 0m0.055s"
     }
   },
   "ocaml": {
     "ocamlc": {
-      "tarai": "real 0m0.597s, user 0m0.570s, sys 0m0.005s"
+      "tarai": "real 0m0.650s, user 0m0.569s, sys 0m0.006s"
     },
     "ocamlopt": {
-      "tarai": "real 0m0.133s, user 0m0.098s, sys 0m0.004s"
+      "tarai": "real 0m0.136s, user 0m0.099s, sys 0m0.003s"
     }
   },
   "js": {
     "node": {
-      "tarai": "real 0m0.368s, user 0m0.261s, sys 0m0.037s"
+      "tarai": "real 0m0.672s, user 0m0.261s, sys 0m0.033s"
     }
   },
   "ruby": {
     "ruby": {
-      "tarai": "real 0m2.076s, user 0m1.843s, sys 0m0.030s"
+      "tarai": "real 0m1.987s, user 0m1.826s, sys 0m0.029s"
     }
   },
   "python": {
     "python": {
-      "tarai": "real 0m4.242s, user 0m4.164s, sys 0m0.027s"
+      "tarai": "real 0m4.746s, user 0m4.208s, sys 0m0.048s"
     },
     "pypy": {
-      "tarai": "real 0m1.749s, user 0m1.631s, sys 0m0.101s"
+      "tarai": "real 0m2.006s, user 0m1.681s, sys 0m0.128s"
     }
   }
 }
