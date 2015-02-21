@@ -1,17 +1,17 @@
 {
   "c": {
     "gcc": {
-      "tarai": "real 0m0.137s, user 0m0.121s, sys 0m0.003s"
+      "tarai": ", real 0m0.002s, user 0m0.000s, sys 0m0.001s"
     }
   },
   "c++": {
     "g++": {
-      "tarai": "real 0m0.143s, user 0m0.117s, sys 0m0.003s"
+      "tarai": ", real 0m0.007s, user 0m0.000s, sys 0m0.001s"
     }
   },
   "java": {
     "javac": {
-      "tarai": "real 0m0.302s, user 0m0.240s, sys 0m0.057s"
+      "tarai": ", real 0m0.304s, user 0m0.243s, sys 0m0.059s"
     }
   },
   "ocaml": {
