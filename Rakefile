@@ -60,8 +60,10 @@ def bench(lang, phase)
       pattern.keys.each do |key|
         build_list = commands["build_" + pattern[key]]
         build_list.keys.each do |key|
-          printLog ("cd #{dir}; " + build_list[key]), YELLOW
-          `cd #{dir}; #{build_list[key]}`
+          if pattern[key] != nil && build_list[key] != nil
+            printLog ("cd #{dir}; " + build_list[key]), YELLOW
+            `cd #{dir}; #{build_list[key]}`
+          end
         end
       end
 

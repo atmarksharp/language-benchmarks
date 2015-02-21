@@ -34,10 +34,10 @@
   },
   "python": {
     "python": {
-      "tarai": "real 0m4.746s, user 0m4.208s, sys 0m0.048s"
+      "tarai": "real 0m4.410s, user 0m4.284s, sys 0m0.040s"
     },
     "pypy": {
-      "tarai": "real 0m2.006s, user 0m1.681s, sys 0m0.128s"
+      "tarai": "real 0m2.134s, user 0m1.629s, sys 0m0.140s"
     }
   }
 }
