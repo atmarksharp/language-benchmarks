@@ -49,6 +49,10 @@ def bench(lang, phase)
 
   puts ""
 
+  if phase.include? "version"
+    system("#{conf['version']}")
+  end
+
   if phase.include? "build"
     if build == true
       printPhase "=== BUILD ===", YELLOW
@@ -117,6 +121,10 @@ end
 
 task :all do
   process("build,run,clean")
+end
+
+task :version do
+  process("version")
 end
 
 task :build do

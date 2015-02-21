@@ -1,0 +1,8 @@
+{ 
+  "python": {
+    "tarai": "python -O3 tarai.py"
+  },
+  "pypy": {
+    "tarai": "pypy -O3 tarai.py"
+  }
+}

@@ -1,5 +1,6 @@
 {
   "c": {
+    "version":"gcc --version",
     "dir":"c",
     "build":"yes",
     "pattern":{
@@ -7,6 +8,7 @@
     }
   },
   "c++": {
+    "version":"g++ --version",
     "dir":"cpp",
     "build":"yes",
     "pattern":{
@@ -14,12 +16,14 @@
     }
   },
   "java": {
+    "version":"javac -version",
     "build":"yes",
     "pattern":{
       "javac":"javac"
     }
   },
   "ocaml": {
+    "version":"ocamlc -v",
     "build":"yes",
     "pattern":{
       "ocamlc":"ocamlc",
@@ -27,13 +31,22 @@
     }
   },
   "js": {
+    "version":"node -v",
     "pattern":{
       "node":"node"
     }
   },
   "ruby": {
+    "version":"ruby -v",
     "pattern":{
       "ruby":"ruby"
+    }
+  },
+  "python": {
+    "version":"python --version",
+    "pattern":{
+      "python":"python",
+      "pypy":"pypy"
     }
   }
 }

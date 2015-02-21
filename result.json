@@ -1,35 +1,43 @@
 {
   "c": {
     "gcc": {
-      "tarai": "real 0m0.149s, user 0m0.120s, sys 0m0.003s"
+      "tarai": "real 0m0.137s, user 0m0.121s, sys 0m0.003s"
     }
   },
   "c++": {
     "g++": {
-      "tarai": "real 0m0.145s, user 0m0.118s, sys 0m0.004s"
-    }
-  },
-  "ruby": {
-    "ruby": {
-      "tarai": "real 0m2.083s, user 0m1.843s, sys 0m0.030s"
-    }
-  },
-  "ocaml": {
-    "ocamlc": {
-      "tarai": "real 0m0.739s, user 0m0.678s, sys 0m0.005s"
-    },
-    "ocamlopt": {
-      "tarai": "real 0m0.152s, user 0m0.098s, sys 0m0.003s"
-    }
-  },
-  "js": {
-    "node": {
-      "tarai": "real 0m0.357s, user 0m0.259s, sys 0m0.036s"
+      "tarai": "real 0m0.143s, user 0m0.117s, sys 0m0.003s"
     }
   },
   "java": {
     "javac": {
-      "tarai": "real 0m0.305s, user 0m0.246s, sys 0m0.052s"
+      "tarai": "real 0m0.302s, user 0m0.240s, sys 0m0.057s"
+    }
+  },
+  "ocaml": {
+    "ocamlc": {
+      "tarai": "real 0m0.597s, user 0m0.570s, sys 0m0.005s"
+    },
+    "ocamlopt": {
+      "tarai": "real 0m0.133s, user 0m0.098s, sys 0m0.004s"
+    }
+  },
+  "js": {
+    "node": {
+      "tarai": "real 0m0.368s, user 0m0.261s, sys 0m0.037s"
+    }
+  },
+  "ruby": {
+    "ruby": {
+      "tarai": "real 0m2.076s, user 0m1.843s, sys 0m0.030s"
+    }
+  },
+  "python": {
+    "python": {
+      "tarai": "real 0m4.242s, user 0m4.164s, sys 0m0.027s"
+    },
+    "pypy": {
+      "tarai": "real 0m1.749s, user 0m1.631s, sys 0m0.101s"
     }
   }
 }
