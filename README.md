@@ -12,6 +12,6 @@ rake clean lang=xxx
 rake version lang=xxx
 ```
 
-*xxx* is the one of below:
+- *xxx* is the one of below:
 
 all, c, c++, java, ocaml, js, ruby, python (this list will be changed)
